@@ -14,7 +14,7 @@
 	if i % 3 != 0 && i % 5 != 0 then print i end
 	
 	print "\n"
-} #gah, end or }?
+}
 
 
 
