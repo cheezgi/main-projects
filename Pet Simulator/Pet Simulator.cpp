@@ -50,7 +50,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 
 			pet.eat(amount);
 
-			jobCounter++;
 			cmdCounter++;
 		}
 
@@ -62,7 +61,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 
 			pet.play(time);
 
-			jobCounter++;
 			cmdCounter++;
 		}
 
@@ -74,14 +72,12 @@ int _tmain(int argc, _TCHAR* argv[]){
 
 			pet.pet(times);
 			
-			jobCounter++;
 			cmdCounter++;
 		}
 
 		if(input == "bathe"){
 			pet.bathe();
 			
-			jobCounter++;
 			cmdCounter++;
 		}
 
@@ -97,7 +93,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 
 			pet.buy(input, tempint);
 			
-			jobCounter++;
 			cmdCounter++;
 		}
 
@@ -105,7 +100,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 			cout << "Why would you do that to poor " << name << "?";
 			pet.hurt();
 			
-			jobCounter++;
 			cmdCounter++;
 		}
 
@@ -117,7 +111,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 		if(input == "stats"){
 			pet.stats();
 			
-			jobCounter++;
 			cmdCounter++;
 		}
 
@@ -137,7 +130,8 @@ int _tmain(int argc, _TCHAR* argv[]){
 
 		if(input == "help"){} //maybe later... C:
 
-
+		jobCounter++;
+		
 		if(jobCounter == 5){
 			cout << "You have earned 15 GP.\n";
 			pet.inventory.money += 15;
@@ -149,9 +143,11 @@ int _tmain(int argc, _TCHAR* argv[]){
 			if(pet.hunger == 0){
 				pet.hurt();
 			}
-
-			pet.hunger -= 0.5;
-
+			
+			if(pet.hunger != 0){
+				pet.hunger -= 0.5;
+			}
+			
 			cmdCounter = 1;
 		}
 
