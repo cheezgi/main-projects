@@ -14,6 +14,8 @@ Implement a function to save progress
 
 using namespace std;
 
+//told you, it was initially written in Visial C++
+//so this might not be right
 int _tmain(int argc, _TCHAR* argv[]){
 	cout << "Welcome to Pet Simulator v1.0!\n";
 	cout << "What would you like your pet to be named? ";
