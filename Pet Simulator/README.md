@@ -7,3 +7,5 @@ works. It's really simple code.
 
 Side note, I learned Java before I learned C++, so if you see any Java-isms or C functions, you know why. 
 I used Google a lot. I love Google.
+
+UPDATE: Just got Visual Studio Express. Now I can basically copy/paste the code. Yay!
